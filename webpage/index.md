@@ -78,6 +78,15 @@ Schedule
 ---------
 
 
+- Aug 29, Preparations
+
+	* Install the software packages by following [[this](https://github.com/wangshusen/CS583-2019F/blob/master/homework/Prepare/HM.pdf)]
+	
+	* Study elementary matrix algebra by following [[this book](http://vmls-book.stanford.edu/vmls.pdf)]
+	
+	* Finish the [[sample questions](https://github.com/wangshusen/CS583-2019F/blob/master/homework/Quiz1-Sample/Q1.pdf)] before Quiz 1.
+
+
 - Aug 29, Lecture 1
 
     * Fundamental ML problems
@@ -87,7 +96,7 @@ Schedule
     * Classification 
 
 
-- Sep 5, **Quiz**
+- Sep 5, **Quiz 1** (around 5\% of the total)
 
 	* Coverage: basic linear algebra, Python programming, and the ML basics in Lecture 1.
 
