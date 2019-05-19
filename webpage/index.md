@@ -290,15 +290,16 @@ This part introduces how to attack neural networks using adversarial examples an
 
 
 
+
 Project
 ---------
 Every student must participate in one [Kaggle competition](https://www.kaggle.com/competitions). 
 
-- **Details**: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)]
+- **Details**: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)] and download.
    
 - **Teamwork policy**: You had better work on your own project. Teamwork (up to 3 students) is allowed if the competition has a heavy workload; the workload and team size will be considered in the grading.
 
-- **Grading policy**: see the tentative evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]
+- **Grading policy**: See the evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]. An OK but not excellent work typically lose 3 points.
     
 
 
@@ -333,19 +334,22 @@ Grading Policy
 
 **Grading percentages**:
 
-- Homework 45\%
-
-- Final 15\%
-
-- Project 20\%
+- Homework 40\%
 
 - Quizzes 20\%
 
+- Final 20\%
+
+- Project 20\%
+
 - Bonus (up to 10\%)
+
 
 **Late penalty**:
 
-- Late submissions of assignments or project document for whatever reason will be punished. 1\% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95\%, then the score after the deduction will be: 95\% - 16\% = 79\%.
+- Late submissions of assignments or project document for whatever reason will be punished. 2\% of the score of an assignment/project will be deducted per day. For example, if an assignment is submitted 15 days and 1 minute later than the deadline (counted as 16 days) and it gets a grade of 95\%, then the score after the deduction will be: 95\% - 2*16\% = 63\%.
+
+- All the deadlines for bonus are firm. Late submission will not receive bonus score.
 
 - Dec 20 is the firm deadline for all the homework and the course project. Submissions later than the firm deadline will not be graded.
 
