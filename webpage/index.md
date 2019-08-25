@@ -35,6 +35,8 @@ Before the class begins, get yourself well prepared by:
 
 - Reading a few chapters of the textbook, *"Deep learning with Python"*, and running the sample code.
 
+- Reading a few chapters of the book, *"Introduction to Applied Linear Algebra"*.
+
 - Doing Homework 0: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)].
 
 
@@ -44,8 +46,7 @@ Description
 
 **Meeting Time:**
 
-- Thursday, 6:30-9:00 PM, classroom TBD
-
+- Thursday, 6:30-9:00 PM, North Building 102
 
 
 **Office Hours:**
@@ -96,10 +97,10 @@ Schedule
     * Classification 
 
 
-- Sep 5, **Quiz 1** (around 5\% of the total)
+- Sep 5, **Quiz 1** after the lecture (around 5\% of the total)
 
-	* Coverage: basic linear algebra, Python programming, and the ML basics in Lecture 1.
-
+	* Coverage: vectors norms ($\ell_2$-norm, $\ell_1$-norm, $\ell_p$-norm, $\ell_\infty$-norm), vector inner product, matrix multiplication, matrix trace, matrix Frobenius norm, scalar function differential, convex function, use Numpy to construct vectors and matrices.
+	
 	* Policy: Printed material is allowed. No electronic device (except for electronic calculator). 
 
 
@@ -127,8 +128,91 @@ Schedule
 - Oct 10, Lecture 7
 
 
+- Oct 17, Lecture 8
 
 
+- Oct 24, Lecture 9
+
+
+- Oct 31, Lecture 10
+
+
+- Nov 7, Lecture 11
+
+
+- Nov 14, Lecture 12
+
+
+- Nov 21, Lecture 13
+
+
+- Dec 5, **Final Exam**
+
+
+- Dec 12 or 19, Selected Project Presentation
+
+
+
+
+Assignments and Bonus Scores
+---------
+- Course Project
+
+	* Submit a proposal to Canvas before Oct 20.
+	
+	* Submit everything to Canvas before Dec 1.
+	
+- Project Presentation
+
+	* Voluntary, up to 5 bonus scores.
+	
+	* Submit relevant information to Canvas before Dec 1.
+	
+	* Up to 7 teams will be selected.
+	
+
+- Homework 1: Linear Algebra Basics
+
+	* Available in Canvas before Sep 22.
+	
+ 	
+- Homework 2: Machine Learning Basics
+
+	* Available in Canvas before Oct 6.
+	
+ 
+- Homework 3: Implement a Convolutional Neural Network
+
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
+	
+	* Submit to Canvas before Oct 27.
+	
+ 
+- Homework 4: Implement a Recurrent Neural Network
+
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
+	
+	* Submit to Canvas before Nov 10.
+	
+	* You may get up to 3 bonus scores by doing extra work. 
+	
+ 
+- Homework 5: Implement an Autoencoder Network
+
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
+	
+	* Submit to Canvas before Dec 1.
+	
+ 
+- Bonus 1: Implement Numerical Optimization Algorithms
+
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
+	
+	* Submit to Canvas (not required).
+	
+	* You may get up to 2 bonus scores. 
+
+ 
 Syllabus and Slides
 ---------
 
@@ -293,7 +377,7 @@ This part introduces how to attack neural networks using adversarial examples an
 
 Project
 ---------
-Every student must participate in one [Kaggle competition](https://www.kaggle.com/competitions). 
+Every student need to participate in a [Kaggle competition](https://www.kaggle.com/competitions). 
 
 - **Details**: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Project/proj.pdf)] and download.
    
@@ -301,6 +385,13 @@ Every student must participate in one [Kaggle competition](https://www.kaggle.co
 
 - **Grading policy**: See the evaluation form [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/project/Evaluation/Evaluation.pdf)]. An OK but not excellent work typically lose 3 points.
     
+    
+Alternatively, one can work on any deep learning research project and submit a research paper style report. Note that the requirement is much higher than a Kaggle project:
+
+- It will be evaluated as if it is a research paper submitted to ICML/CVPR/KDD. If it does not have sufficient novelty and technical contribution, it will receive a low score.
+
+- It cannot be a paper that published or posted on arXiv **before** the course begins. It is supposed to be finished during this semester.
+
 
 
 
@@ -332,17 +423,27 @@ Textbooks
 Grading Policy
 ---------
 
-**Grading percentages**:
+**Weights**:
 
 - Homework 40\%
 
-- Quizzes 20\%
+- Quizzes 20\% (students' average score is likely around 17)
 
-- Final 20\%
+- Final 20\% (students' average score is likely around 16)
 
-- Project 20\%
+- Project 20\%  (students' average score is likely around 17)
 
 - Bonus (up to 10\%)
+
+
+**Expected grade on record**:
+
+- In the previous semester, the students' average scores in the quiz, final, and project are respectively 85\%, 80\%, and 85\%.
+
+- Thus, an average student is expected to lose at least 3+4+3=10 points. 
+
+- If an average student does not collect any bonus score, his grade on record is expected to be "B+".
+An average student needs at least 3 bonus scores to get "A".
 
 
 **Late penalty**:
