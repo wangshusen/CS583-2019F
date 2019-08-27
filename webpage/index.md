@@ -4,41 +4,7 @@ CS583: Deep Learning
 
 > Instructor: Shusen Wang
 
-
-
-
-Read this before taking the course!
----------
-
-The course requires very heavy workload (in fact much heavier than the previous semester). <span style="color:red">**Do NOT take this course unless you can spend much time on this course.**</span>
-
-- You are required (instead of "recommended") to read the text book, "Deep learning with Python", and run the example code. In the quizzes and final exam, there will be questions based on the book's content, especially the content not covered in the class.
-
-- You are required to participate a Kaggle competition and get a decent score and ranking.
-
-- There are at least 5 homework.
-
-- There are additional programming assignment, by doing which you will receive bonus score. Get "A" is difficult without collecting the bonus.
-
-
-<span style="color:red">**Be serious about the prerequisites. Do NOT take the course if you do not meet the prerequisite requirements.**</span> 
-
-- In the 2nd class, you will be asked to do a quiz (weight in the grading: around 5\%). The quiz will test your knowledge in elementary algebra and calculus and Python programming (especially NumPy).
-
-- There will be a quiz on matrix algebra, matrix calculus, and optimization.
-
-- In the final exam, there will be questions on matrix algebra, differentiation, optimization, and Python code understanding.
-
-
-
-Before the class begins, get yourself well prepared by:
-
-- Reading a few chapters of the textbook, *"Deep learning with Python"*, and running the sample code.
-
-- Reading a few chapters of the book, *"Introduction to Applied Linear Algebra"*.
-
-- Doing Homework 0: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)].
-
+> TA: Yao Xiao
 
 
 Description
@@ -94,8 +60,6 @@ Schedule
     
     * Regression
     
-    * Classification 
-
 
 - Sep 5, **Quiz 1** after the lecture (around 5\% of the total)
 
@@ -105,13 +69,16 @@ Schedule
 
 
 - Sep 5, Lecture 2
+
+    * Read this before coming: [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
     
-    * Classification (cont.)
+    * Classification
     
-    * Regularization
     
     
 - Sep 12, Lecture 3
+
+    * Regularization
     
     * Neural network basics
 
@@ -204,11 +171,11 @@ Assignments and Bonus Scores
 	* Submit to Canvas before Dec 1.
 	
  
-- Bonus 1: Implement Numerical Optimization Algorithms
+- Bonus 1: Implement Numerical Optimization Algorithms (Voluntary)
 
 	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
 	
-	* Submit to Canvas (not required).
+	* Submit to Canvas before Oct 26 (firm deadline).
 	
 	* You may get up to 2 bonus scores. 
 
@@ -219,11 +186,15 @@ Syllabus and Slides
 1. **Machine learning basics.**
 This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.
 
-    * ML basics. [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/1_ML_Basics.pdf)]
+    * ML basics. 
+    [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/1_ML_Basics.pdf)]
+    [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/1_Models.pdf)]
+
     
     * Regression. 
     [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/2_Regression_1.pdf)] 
     [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/2_Regression_2.pdf)]
+    
     
     * Classification. 
     
@@ -390,7 +361,7 @@ Alternatively, one can work on any deep learning research project and submit a r
 
 - It will be evaluated as if it is a research paper submitted to ICML/CVPR/KDD. If it does not have sufficient novelty and technical contribution, it will receive a low score.
 
-- It cannot be a paper that published or posted on arXiv **before** the course begins. It is supposed to be finished during this semester.
+- It cannot be a paper that published or posted on arXiv **before** the course begins. It is supposed done during this semester.
 
 
 
@@ -444,6 +415,8 @@ Grading Policy
 
 - If an average student does not collect any bonus score, his grade on record is expected to be "B+".
 An average student needs at least 3 bonus scores to get "A".
+
+- According to Stevens's policy, a score lower than 73.0 will be fail.
 
 
 **Late penalty**:
