@@ -11795,7 +11795,7 @@ div#notebook {
 <li>The HTML file must contain <strong>the code</strong> and <strong>the output after execution</strong>.</li>
 </ul>
 </li>
-<li><p>Upload this .HTML file to your Github repo.</p>
+<li><p>Upload this .HTML file to your Google Drive, Dropbox, or your Github repo.</p>
 </li>
 <li><p>Submit the link to this .HTML file to Canvas.</p>
 <ul>
@@ -12368,9 +12368,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="6.-Mini-batch-SGD-(fill-the-code)">6. Mini-batch SGD (fill the code)<a class="anchor-link" href="#6.-Mini-batch-SGD-(fill-the-code)">&#182;</a></h1><p>Define $Q_I (w) = \frac{1}{b} \sum_{i \in I} \log \Big( 1 + \exp \big( - y_i x_i^T w \big) \Big) + \frac{\lambda}{2} \| w \|_2^2 $, where $I$ is a set containing $b$ indices randomly drawn from $\{ 1, \cdots , n \}$ without replacement.</p>
-<p>The stochastic gradient at $w$ is $g_I = \frac{\partial Q_I }{ \partial w} = \frac{1}{b} \sum_{i \in I} \frac{- y_i x_i }{1 + \exp ( y_i x_i^T w)} + \lambda w$.</p>
-
+<h1 id="6.-Mini-batch-SGD-(fill-the-code)">6. Mini-batch SGD (fill the code)<a class="anchor-link" href="#6.-Mini-batch-SGD-(fill-the-code)">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -12378,7 +12376,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.1.-Compute-the-objective-$Q_I$-and-its-gradient-using-a-batch-of-samples">6.1. Compute the objective $Q_I$ and its gradient using a batch of samples<a class="anchor-link" href="#6.1.-Compute-the-objective-$Q_I$-and-its-gradient-using-a-batch-of-samples">&#182;</a></h2>
+<h2 id="6.1.-Compute-the-objective-$Q_I$-and-its-gradient-using-a-batch-of-samples">6.1. Compute the objective $Q_I$ and its gradient using a batch of samples<a class="anchor-link" href="#6.1.-Compute-the-objective-$Q_I$-and-its-gradient-using-a-batch-of-samples">&#182;</a></h2><p>Define $Q_I (w) = \frac{1}{b} \sum_{i \in I} \log \Big( 1 + \exp \big( - y_i x_i^T w \big) \Big) + \frac{\lambda}{2} \| w \|_2^2 $, where $I$ is a set containing $b$ indices randomly drawn from $\{ 1, \cdots , n \}$ without replacement.</p>
+<p>The stochastic gradient at $w$ is $g_I = \frac{\partial Q_I }{ \partial w} = \frac{1}{b} \sum_{i \in I} \frac{- y_i x_i }{1 + \exp ( y_i x_i^T w)} + \lambda w$.</p>
+
 </div>
 </div>
 </div>
@@ -12390,8 +12390,8 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the objective Q_I and the gradient of Q_I</span>
 <span class="c1"># Inputs:</span>
 <span class="c1">#     w: d-by-1 matrix</span>
-<span class="c1">#     xi: 1-by-d matrix</span>
-<span class="c1">#     yi: scalar</span>
+<span class="c1">#     xi: b-by-d matrix</span>
+<span class="c1">#     yi: b-by-1 matrix</span>
 <span class="c1">#     lam: scalar, the regularization parameter</span>
 <span class="c1">#     b: integer, the batch size</span>
 <span class="c1"># Return:</span>
@@ -12415,7 +12415,13 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.2.-Implement-mini-batch-SGD">6.2. Implement mini-batch SGD<a class="anchor-link" href="#6.2.-Implement-mini-batch-SGD">&#182;</a></h2>
+<h2 id="6.2.-Implement-mini-batch-SGD">6.2. Implement mini-batch SGD<a class="anchor-link" href="#6.2.-Implement-mini-batch-SGD">&#182;</a></h2><p>Hints:</p>
+<ol>
+<li>In every epoch, randomly permute the $n$ samples (just like SGD).</li>
+<li>Each epoch has $\frac{n}{b}$ iterations. In every iteration, use $b$ samples, and compute the gradient and objective using the <code>mb_stochastic_objective_gradient</code> function. In the next iteration, use the next $b$ samples, and so on.</li>
+<li>Note that <code>n mod b</code> may not be zero. For example, if $n=1095$ and $b=100$, then there will be $95$ samples left. If the $95$ samples are not used, then the computed objective function will be incorrect. You need to take this effect into account in your implementation of the <code>mb_sgd</code> function.</li>
+</ol>
+
 </div>
 </div>
 </div>
@@ -12518,6 +12524,15 @@ div#notebook {
 </li>
 </ul>
 <p>Follow the code in Section 4 to plot <code>objective function value</code> against <code>epochs</code>. There should be four curves in the plot; each curve corresponds to one algorithm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hint: Logistic regression with $\ell_2$-norm regularization is a strongly convex optimization problem. All the algorithms will converge to the same solution. In the end, the <code>objective function value</code> of the 4 algorithms will be the same. If not the same, your implementation must be wrong.</p>
 
 </div>
 </div>
