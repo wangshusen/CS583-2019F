@@ -17,7 +17,7 @@ Description
 
 **Office Hours:**
 
-- Thursday, 3:00 - 5:00 PM, North Building 205
+- Thursday, 3:00 - 5:00 PM, Gateway South 354
 
 
 
@@ -70,53 +70,104 @@ Schedule
 
 - Sep 5, Lecture 2
 
-    * Read this before coming: [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
+    * Read these before coming: 
+    [[Matrix Calculus](https://github.com/wangshusen/CS583A-2019Spring/blob/master/reading/MatrixCalculus.pdf)]
+    [[Logistic Regression](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
     
-    * Classification
+    * Regression (Cont.)
+    
+    * Classification: logistic regression.
     
     
     
 - Sep 12, Lecture 3
-
-    * Regularization
     
-    * Neural network basics
-
+    * Classification: SVM, softmax classifier, and KNN.
 
 - Sep 19, Lecture 4
 
+    * Read Sections 1 to 3 before coming: [[SVD and PCA](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/SVD/svd.pdf)]
+
+    * Read Sections 1 to 4 before coming: [[neural networks and backpropagation](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/BP/bp.pdf)]
+
+    * Regularization.
+    
+    * Singular value decomposition (SVD).
+    
+    * Scientific computing libraries.
+    
+    * Neural networks.
+
 
 - Sep 26, Lecture 5
+    
+    * Keras.
+    
+    * Convolutional neural networks (CNNs).
 
 
 - Oct 3, Lecture 6
 
+    * Finish reading the note before coming: [[neural networks and backpropagation](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/BP/bp.pdf)]
+    
+    * CNNs (Cont.)
+
 
 - Oct 10, Lecture 7
-
+    
+    * CNNs (Cont.)
+    
+    * Parallel computing.
+    
+    * Finish reading the note before coming: [[parallel computing](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Parallel/Parallel.pdf)]
+    
 
 - Oct 17, Lecture 8
 
+    * Recurrent neural networks (RNNs).
+    
 
 - Oct 24, Lecture 9
+    
+    * Quiz 2
 
 
 - Oct 31, Lecture 10
 
+    * Text Generation.
+    
+    * Machine translation.
+
 
 - Nov 7, Lecture 11
+
+    * Attention.
+    
+    * Transformer.
+
+    * Autoencoders.
 
 
 - Nov 14, Lecture 12
 
+    * Adversarial robustness.
+    
+    * GANs.
+
+	* Variational autoencoder (VAE).
+
 
 - Nov 21, Lecture 13
+
+	* Preview the slides before coming: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_1.pdf)]
+	
+	* Deep reinforcement learning.
 
 
 - Dec 5, **Final Exam**
 
 
-- Dec 12 or 19, Selected Project Presentation
+- Dec 12, Selected Project Presentation
 
 
 
@@ -140,12 +191,16 @@ Assignments and Bonus Scores
 
 - Homework 1: Linear Algebra Basics
 
-	* Available in Canvas before Sep 22.
+	* Available only on Canvas (auto-graded.)
+	
+	* Submit to Canvas before Sep 22.
 	
  	
 - Homework 2: Machine Learning Basics
 
-	* Available in Canvas before Oct 6.
+	* Available only on Canvas (auto-graded.)
+
+	* Submit to Canvas before Oct 6.
 	
  
 - Homework 3: Implement a Convolutional Neural Network
@@ -159,7 +214,7 @@ Assignments and Bonus Scores
 
 	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
 	
-	* Submit to Canvas before Nov 10.
+	* Submit to Canvas before Nov 17.
 	
 	* You may get up to 3 bonus scores by doing extra work. 
 	
@@ -175,9 +230,23 @@ Assignments and Bonus Scores
 
 	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583-2019F/tree/master/homework)].
 	
+    * You will need the knowledge in the lecture note: [[Logistic Regression](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
+	
 	* Submit to Canvas before Oct 26 (firm deadline).
 	
 	* You may get up to 2 bonus scores. 
+
+- Bonus 2: Implement Numerical Optimization Algorithms (Voluntary)
+
+	* Available at Canvas.
+	
+	* You will need the knowledge in the lecture note: [[Parallel Computing](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Parallel/Parallel.pdf)]
+	
+	* You can choose to implement Federated Averaging or/and Decentralized Optimization. You may get up to 2 bonus points for each. 
+	
+	* Submit to Canvas before Nov 24 (firm deadline).
+
+
 
  
 Syllabus and Slides
@@ -218,6 +287,7 @@ This part briefly introduces the fundamental ML problems-- regression, classific
     * Dimensionality reduction. 
     [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_1.pdf)] 
     [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_2.pdf)] 
+    [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/SVD/svd.pdf)]
     
     * Scientific computing libraries.
     [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_3.pdf)]
@@ -228,6 +298,7 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
 
     * Multilayer perceptron and backpropagation. 
     [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/6_NeuralNet_1.pdf)]
+    [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/BP/bp.pdf)]
     
     * Keras. 
     [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/6_NeuralNet_2.pdf)]
@@ -235,12 +306,10 @@ This part covers the multilayer perceptron, backpropagation, and deep learning l
     * Further reading:
     
         - [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
+        
+        - [[parameter initialization](https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79)]
     
-        - [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
-    
-        - [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
-    
-        - [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+        - [[optimization algorithms](http://ruder.io/optimizing-gradient-descent/)]
     
     
 3. **Convolutional neural networks (CNNs).**
@@ -271,17 +340,8 @@ This part is focused on CNNs and its application to computer vision problems.
         - [visualize CNN (Section 5.4, Chollet's book)]
 
 
-4. **Autoencoders.**
-This part introduces autoencoders for dimensionality reduction and image generation.
 
-    * Autoencoder for dimensionality reduction.
-    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_1.pdf)]
-    
-    * Variational Autoencoders (VAEs) for image generation. 
-    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_2.pdf)]
-
-
-5. **Recurrent neural networks (RNNs).**
+4. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
     * Text processing.
@@ -317,32 +377,62 @@ This part introduces RNNs and its applications in natural language processing (N
         - [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
 
-6. **Recommender system.** 
+5. **Autoencoders.**
+This part introduces autoencoders for dimensionality reduction and image generation.
+
+    * Autoencoder for dimensionality reduction.
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_1.pdf)]
+    
+    * Variational Autoencoders (VAEs) for image generation. 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_2.pdf)]
+
+    
+6. **Generative Adversarial Networks (GANs).** 
+
+    * DC-GAN [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/12_GAN.pdf)]
+
+
+
+7. **Recommender system.** 
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
     * Collaborative filtering. 
     [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/10_Recommender.pdf)]
 
+    
+8. **Deep Reinforcement Learning.** 
 
-7. **Adversarial Robustness.**
+    * Reinforcement learning [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_1.pdf)] [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/DRL/DRL.pdf)]
+
+    * Value-based learning [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_2.pdf)]
+
+    * Policy-based learning [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_3.pdf)]
+
+    * Actor-critic methods [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_4.pdf)]
+
+    * AlphaGo [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/13_RL_5.pdf)]
+
+
+9. **Parallel Computing.** 
+
+	* Basics and MapReduce. [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/14_Parallel_1.pdf)] [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Parallel/Parallel.pdf)]
+	
+	* Parameter Server and Decentralized Network. [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/14_Parallel_2.pdf)] 
+	
+	* Federated Learning. [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/14_Parallel_3.pdf)] 
+
+
+10. **Adversarial Robustness.**
 This part introduces how to attack neural networks using adversarial examples and how to defend from the attack.
 
-	* White box attack and defend.
+	* Data evasion attack and defense.
     [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/11_Adversarial.pdf)]
-    
+    [[lecture note](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Adversarial/DataAttacks.pdf)]
+        
     * Further reading:
     [[Adversarial Robustness - Theory and Practice](https://adversarial-ml-tutorial.org/)]
     
-    
-8. **Generative Adversarial Networks (GANs).** 
-
-    * DC-GAN [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/12_GAN.pdf)]
-
-
-
-
-
 
 
 
@@ -404,7 +494,7 @@ Grading Policy
 
 - Project 20\%  (students' average score is likely around 17)
 
-- Bonus (up to 10\%)
+- Bonus (7\% from bonus assignments; 3\% from HM4; 5\% from course project presentation.)
 
 
 **Expected grade on record**:
